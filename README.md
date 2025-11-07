@@ -1,2 +1,2 @@
 # JS-practice
-repo for javasscript pracctice and learning
+repo for javasscript practice and learning
