@@ -16,7 +16,7 @@ let state=null
 //string =>""
 //boolean =>true/false
 //null =>standalone value
-//undefined =>
+//undefined =>when we do not specify aby value to the variable
 //symbol =>unique
 
 
