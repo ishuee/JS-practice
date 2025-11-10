@@ -43,3 +43,20 @@ const myFunc=function(){
 //Arrays
 //objects
 //functions
+
+//****************************************************************************************************** */
+
+//STRINGS
+
+let repo=1
+console.log(`hello my name is ${name} and my repo count
+is ${repo}`)
+
+const game=new String('mario')
+
+console.log(game[0]) //m
+console.log(game.__proto__) //{}
+console.log(game.length) //5
+console.log(game.toUpperCase()) //MARIO
+console.log(game.charAt(2)) //r
+console.log(game.indexOf('r')) //2
