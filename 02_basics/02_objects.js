@@ -53,3 +53,44 @@ tinderuser.isLoggedIn= false
 
 console.log(tinderuser) //{ id: '123abc', name: 'sam', isLoggedIn: false }
 
+const regularUser={
+  email:"some@gmail.com",
+  fullname:{
+    name:{
+      firstname:"isha",
+      lastname:"agarwal"
+    }
+  }
+}
+
+console.log(regularUser.fullname) //{ name: { firstname: 'isha', lastname: 'agarwal' } }
+console.log(regularUser.fullname.name.firstname) //isha
+
+const obj1={1:"a",2:"b"}
+const obj2={3:"a",4:"b"}
+
+const obj3={obj1,obj2}
+console.log(obj3) //{ obj1: { '1': 'a', '2': 'b' }, obj2: { '3': 'a', '4': 'b' } }
+const obj4=Object.assign({},obj1,obj2) //{} is the source 
+console.log(obj4) //{ '1': 'a', '2': 'b', '3': 'a', '4': 'b' }
+
+const obj5={...obj1,...obj2} //spread operator
+console.log(obj5) //{ '1': 'a', '2': 'b', '3': 'a', '4': 'b' }
+
+console.log(Object.keys(tinderuser)) //[ 'id', 'name', 'isLoggedIn' ]
+console.log(Object.values(tinderuser)) //[ '123abc', 'sam', false ]
+console.log(Object.entries(tinderuser)) 
+//[ [ 'id', '123abc' ], [ 'name', 'sam' ], [ 'isLoggedIn', false ] ]
+
+console.log(tinderuser.hasOwnProperty('isLoggedIn')) //true
+
+//DE-STRUCTURE
+
+const course={
+  name:"js",
+  price:"999",
+  instructor:"hitesh"
+}
+
+const {instructor:inst}=course 
+console.log(inst) //hitesh
