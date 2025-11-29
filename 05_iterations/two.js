@@ -1,4 +1,5 @@
 //for of
+//not useful for objects
 
 const arr=[1,2,3,4,5]
 
