@@ -36,3 +36,15 @@ Mycoding.forEach( (item)=> {
 /*javascript
 python */
 })
+
+
+const nums=[]
+myNums.forEach( (num)=>{
+    if(num>4){
+        nums.push(num)
+    }
+} )
+
+console.log(nums) //[ 5, 6, 7, 8, 9, 10 ]
+
+//forEach:To iterate over each element in an array and perform a side effect
