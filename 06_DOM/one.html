@@ -2,19 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>DOM learning</title>
-    <style>
-        .bg-black{
-            background-color: black;
-            color:white
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-<body  class="bg-black">
-    <div >
-        <h1 id="title" class="heading"> DOM learning</h1>
-        <p> Lorem ipsum dolor sit amet.
-        </p>
+<body style="background-color: black; color:wheat;">
+    <div class="parent"> 
+    <!--comment-->
+    <div class="day">Monday</div>
+    <div class="day">Tuesday</div>
+    <div class="day">Wednesday</div>
+    <div class="day">Thursday</div>
+    <div class="day">Friday</div>
     </div>
 </body>
+<script>
+   const parent=document.querySelector('.parent')
+   console.log(parent)
+   console.log(parent.children[1].innerHTML)
+
+   for (let index = 0; index < parent.children.length; index++) {
+    console.log(parent.children[index].innerHTML)
+   }
+   parent.children[1].style.color="orange"
+   const dayone=document.querySelector('.day')
+   console.log(dayone)
+   console.log(dayone.parentElement)
+   console.log(dayone.nextElementSibling)
+
+   <!--node list important-->
+   console.log("NODES:", parent.childNodes)
+
+</script>
 </html>
